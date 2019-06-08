@@ -1,30 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>index</title>
-    <style type="text/css">
-
-    </style>
-</head>
 <body>
-<ul>
-<li><a href="drawings/drawing.html">My first drawing set </a> learning basic drawing functions</li>
-<li><a href="functions/functions.html">learning to code functions </a> </li>
-<li><a href="objects/objects.html">drawing objects </a> </li>
-<li><a href="loops/loops.html">loop functions </a> </li>
-<li><a href="animation/animation.html">animations</a> </li>
-<li><a href="bouncingball/bouncingball.html">bouncing ball animation </a> </li>
-<li><a href="interactions/interaction.html">listener/mouse event </a> </li>
-<li><a href="interactionsTwo/interaction.html">listener tracing a square </a> </li>
-<li><a href="interactionsThree/interactionsThree.html">trace two squares/rectangles </a> </li>
-<li><a href="drawsquare/drawsquare.html">drawing a square </a> </li>
-<li><a href="draggable/draggable.html">draggable points </a> </li>
-<li><a href="versionOne/drawspace.html">Sprint 1,2,3 </a>drawing a rectangle inbounds</li>
+    
+    <h2>My drawing application</h2>
+    <hr>
 
-</ul>
-
+    <li><a href="versionOne/index.html">version 1 </a> this is the first sprint of the application</li>
+    <li><a href="versionTwo/index.html">version 2 </a> this is the second sprint of the application</li>
+    <li><a href="versionThree/index.html">version 3 </a> this is the third sprint of the application</li>
+    <li><a href="versionFour/index.html">version 4 </a> this is the fourth sprint of the application</li>
+    <li><a href="versionFive/index.html">version 5 </a> this is the fifth sprint of the application</li>
+    <li><a href="versionSix/index.html">version 6 </a> this is the sixth sprint of the application</li>
+    <li><a href="versionSeven/index.html">version 7 </a> this is the seventh sprint of the application</li>
+    <li><a href="versionEight/index.html">version 8 </a> this is the eighth sprint of the application</li>
+    <li><a href="versionNine/index.html">version 9 </a> this is the nineth sprint of the application</li>
+    <li><a href="versionTen/index.html">version 10 </a> this is the tenth sprint of the application</li>
+    <h4>Relevant Implications</h4>
+    <p>
+    Future Proofing - program is designed so new features can be added easily and old ones removed
+    Addressed - Program element, (colours, shapes, buttons) have all been programmed as object, means each is a self-contained, modular piece of code, that takes a defined set of parameters to work. (Many take basic mouse data and colour information).
+    
+    All objects are built to a similar structure and compulsorily contain an update function which means they can appear on the interface using the update call.
+    
+    Management of most objects happens in a central place (control object).
+    
+    Idea is an experienced programmer could easily remove elements or add new features.
+    Comments are also precise and informative.</p>
+    
+    <h4>Functionality</h4> 
+    <p>does the program work well?
+    → Free of bugs, loads quickly, works on different browsers. 
+    How have we addressed this?
+    Program is in pure javascript. 
+    Has no graphics, therefore loads very quickly. I have tested this by using a live web server to store my versions and have observed loading performance. 
+    To ensure the program works well, I have systematically tested it. 
+    Tester user interactions 
+    Position of clicking and direction of dragging 
+    This has included careful checks around boundaries. 
+    The use of the Math.abs function was discovered after testing failures drawing circular shapes. (because these objects were being given negative radius values).
+    Any new components were tested prior to being added to the main program. At various stages in sprints, console logging was used to analyse boundary test functions, and locate problems when bugs appeared.
+    
+    Examples of trialling and making decisions
+    Can you find examples of exploring different options and making a decision about which is the best solution? 
+    Trialling different options for allowing the user to draw circles on the screen.
+    → giving circular or rectangular guides
+    
+    Effectively using information from testing and trialling to improve the functionality of the outcome. 
+    Interface design
+    Trialling colour themes 
+    Finding situations where objects drew outside of the drawing area (inspite of having in-boundary parameters) led to the use of the drawBoundaryRect function in the control_draw.js.
+    
+    How did your working process (planning, testing, trialling) lead to the development of a  high quality digital outcome. 
+    → How was the Agile process helpful?
+    Allowed planning and development to happen together 
+    Created repeated cycles of plan  → develop → test 
+    → After two or three sprints I got a much clearer idea of what I could achieve and my aims became much more focused and realistic 
+    → Helped to see the project in a highly simplified form at the start (potentially shippable product)
+    
+    </p>
 </body>
 </html>
