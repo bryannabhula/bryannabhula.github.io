@@ -94,13 +94,18 @@ class control_draw{
         if (Button.selectedShape == "Reset"){
             this.objectSet = []; // clearing the object set (all objects drawn on the rectangle canvas)
             Button.selected = "";
+            Button.selectedShape = "";//de-selecting the button 
+
+
         } 
     
         // making an undo button
         if (Button.selectedShape == "Undo"){
             this.objectSet.pop(); // remove the last object that was drawn
             Button.selected = "";
+            Button.selectedShape = ""; //de-selecting the button 
         }
+
            
         this.mouseDown = false;
     }
